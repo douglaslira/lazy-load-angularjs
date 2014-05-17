@@ -1,4 +1,4 @@
-define(['showcase/ShowCaseModule'], function(app) {
+define(['modules/showcase/ShowCaseModule'], function(app) {
 	app.factory('ShowCaseService', ['$q', '$timeout','$http', '$rootScope', function($q, $timeout,$http, $rootScope) {
 		var apiData = {
 			getResults: function(start, maxResult) {

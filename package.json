@@ -1,20 +1,20 @@
 {
-  "name": "suricato-manager",
+  "name": "system-manager",
   "version": "1.0.0",
-  "description": "Manager for studio",
+  "description": "System Lazy Load with AngularJS and RequireJS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/douglaslira/suricato"
+    "url": "https://github.com/douglaslira/lazy-load-angularjs"
   },
   "keywords": [
     "Lazy",
     "Loading",
     "AngularJS"
   ],
-  "author": "Douglas Lira (douglas.lira@suricato.io) & Eduardo Azevedo (eduardo@suricato.io)",
+  "author": "Douglas Lira (douglas.lira.web@gmail.com)",
   "license": "BSD",
   "dependencies": {
     "express": "~3.2.0"

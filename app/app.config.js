@@ -1,1 +1,1 @@
-define(['showcase/ShowCaseModule'], {modules:['ngRoute','ui.router','showcase']});
+define(['modules/showcase/ShowCaseModule'], {modules:['ngRoute','ui.router','showcase']});

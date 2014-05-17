@@ -1,4 +1,4 @@
-define(['../shared/lazyload/stateDependencyResolverFor', 'showcase/ShowCaseModule.config','../shared/lazyload/makeModuleLazyLoadable'], function(stateDependencyResolverFor, stateConfig, makeModuleLazyLoadable) {
+define(['../../shared/lazyload/stateDependencyResolverFor', 'modules/showcase/ShowCaseModule.config','../../shared/lazyload/makeModuleLazyLoadable'], function(stateDependencyResolverFor, stateConfig, makeModuleLazyLoadable) {
 
     var mod = angular.module('showcase', ['ngRoute', 'ui.router', 'ajoslin.promise-tracker', 'ngSanitize']);
 
@@ -9,7 +9,7 @@ define(['../shared/lazyload/stateDependencyResolverFor', 'showcase/ShowCaseModul
     $stateProvider
         .state('showcase', {	
             url: "/showcase",
-            templateUrl: "showcase/views/showcase.tpl.html",
+            templateUrl: "modules/showcase/views/showcase.tpl.html",
             resolve:  stateDependencyResolverFor(stateConfig.showcase)
         })
     }]);

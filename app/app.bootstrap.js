@@ -1,12 +1,12 @@
 var systemModules =  [];
 var  depsAngular = [
-'lib/angular-route/angular-route',
-'lib/angular-ui-router/release/angular-ui-router',
-'lib/angular-sanitize/angular-sanitize',
-'lib/angular-resource/angular-resource',
-'lib/angular-promise-tracker/promise-tracker',
-'lib/angular-local-storage/angular-local-storage',
-'lib/angular-gettext/dist/angular-gettext',
+'library/angular-route/angular-route',
+'library/angular-ui-router/release/angular-ui-router',
+'library/angular-sanitize/angular-sanitize',
+'library/angular-resource/angular-resource',
+'library/angular-promise-tracker/promise-tracker',
+'library/angular-local-storage/angular-local-storage',
+'library/angular-gettext/dist/angular-gettext',
 'app.modules'
 ];
 
@@ -25,11 +25,11 @@ require.config({
     shim: {
     },
     paths: {
-        'moment' : 'lib/momentjs/moment'
+        'moment' : 'library/momentjs/moment'
     },
     map: {
         '*': {
-            'css': 'lib/require-css/js/css',
+            'css': 'library/require-css/js/css',
             'jquery' : 'shared/wrapper/jquery'
         }
     }

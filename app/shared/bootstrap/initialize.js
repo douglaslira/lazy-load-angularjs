@@ -1,4 +1,4 @@
-define(['lib/angular/angular', 'shared/bootstrap/appconfig'], function(app, appconfig) {
+define(['library/angular/angular', 'shared/bootstrap/appconfig'], function(app, appconfig) {
     return {
         bootstrap: function(depsAngular, configModule) {
 

@@ -1,5 +1,5 @@
 define({
-	defaultRoutePath: '/portal',
+	defaultRoutePath: '/showcase',
     defaultDateFormat: 'MMM d, yyyy',
     localStoragePrefix: 'system'
 });
