@@ -1,5 +1,5 @@
 define({
-	defaultRoutePath: '/showcase',
+	defaultRoutePath: '/dashboard',
     defaultDateFormat: 'MMM d, yyyy',
     localStoragePrefix: 'system'
 });

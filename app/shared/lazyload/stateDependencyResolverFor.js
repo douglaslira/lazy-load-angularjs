@@ -3,14 +3,14 @@ define(function(){
   var isFirstRun = true;
 
   return function stateDependencyResolverFor(stateConfig) {
-    return {resolver:['$q','$rootScope','$location','$timeout', function($q, $rootScope, $location, $timeout) {
+    return {resolver:['$q','$rootScope','$location','$timeout', 'AuthStateService', function($q, $rootScope, $location, $timeout, AuthStateService) {
 
       var deferred = $q.defer();
 
       if (stateConfig.access) {
-        if (stateConfig.access == "IS_LOGGEDIN") {
+        if (stateConfig.access === "IS_LOGGEDIN") {
           // TODO
-          if (!true) {
+          if (!AuthStateService.getCurrentUser()) {
            var onError = function() {
              $timeout(function() {
                $location.path("/login");
