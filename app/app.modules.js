@@ -16,16 +16,13 @@ define(['shared/lazyload/makeModuleLazyLoadable', 'app.settings', 'app.config', 
 
     app.run(function ($rootScope, $state, $stateParams, $templateCache) {
 
-        $rootScope.$on('$stateChangeSuccess', function() {
-            $templateCache.removeAll();
-        });
-
+        $templateCache.removeAll();
+        
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
         $rootScope.restPrefix = restPrefix;
 
         appconfig.installDefaultErrorHandler.call(appconfig,$rootScope);
-
         appconfig.completePreloading.call(appconfig);
 
     });
