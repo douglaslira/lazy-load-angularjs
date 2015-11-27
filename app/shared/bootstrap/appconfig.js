@@ -1,25 +1,25 @@
 define(['jquery'], function(jQuery) {
     return {
         init: function(configModule, onSuccess, onFailure) {
-            // Inicialização do sistema
-            jQuery.get(restPrefix + "/initconfig", function(data) {
+            /*// Inicialização do sistema
+            jQuery.get(restPrefix + "/initconfig", function(data) {*/
                 var extra_deps = [];
                 
                 window.system = window.system || { };
-                window.system['config'] = data;
+                window.system['config'] = "";
                 window.system['extra_modules'] = [];
 
                 if (onSuccess) {
                     onSuccess(extra_deps);
                 }
-
+            /*
             }).done(function() {
             }).fail(function() {
                 if (onFailure){
                     onFailure();
                 }
             }).always(function() {
-            });
+            });*/
         },
         completePreloading: function() {
             // Finalização da requisição
